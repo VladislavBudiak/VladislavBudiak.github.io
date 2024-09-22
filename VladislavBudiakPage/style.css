@@ -213,11 +213,7 @@ header nav li a{
     text-decoration: none; /* Remove underline */
 }
 
-/* Add underline only to the current page */
-header nav li a.current {
-    text-decoration: underline; /* Add underline for current page */
-    color: #a5a5a5; /* Optional: change the color for the current page */
-}
+
 
 header nav li a:hover,
 header nav li a.active{
@@ -305,33 +301,6 @@ body.open header .open-menu span:nth-child(3){
   	transform: rotate(-45deg);
   	top: 17px;
   	left: 4px;
-}
-
-header nav.mobile ul{
-	display:none;
-}
-
-header nav.mobile ul li{
-	display:block;
-}
-
-header nav.mobile ul li a{
-	width: 100%;
-    display: block;
-    border-bottom: 1px solid rgba(206,206,206,0.3);
-    opacity: 1;
-    visibility: visible;
-    padding-left:0.52rem;
-    transition-delay: 0ms;
-    transition: all .2s ease;
-}
-
-header nav.mobile ul li a:hover{
-    padding-left:1.5rem;
-}
-
-header nav.mobile ul li a.separator{
-	display:none;
 }
 
 
