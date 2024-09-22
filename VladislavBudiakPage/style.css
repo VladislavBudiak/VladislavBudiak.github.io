@@ -213,7 +213,11 @@ header nav li a{
     text-decoration: none; /* Remove underline */
 }
 
-
+/* Add underline only to the current page */
+header nav li a.current {
+    text-decoration: underline; /* Add underline for current page */
+    color: #a5a5a5; /* Optional: change the color for the current page */
+}
 
 header nav li a:hover,
 header nav li a.active{
