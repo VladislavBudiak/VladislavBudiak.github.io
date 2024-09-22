@@ -22,10 +22,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 a {
-	background: #313131;
+	background: #FFFFFF;
 	font-family: 'Oxygen', sans-serif;
 	font-weight: 300;
-	color:#fff;
+	color:#313131;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -55,10 +55,10 @@ html{
 }
 
 body {
-	background: #313131;
+	background: #FFFFFF;
 	font-family: 'Oxygen', sans-serif;
 	font-weight: 300;
-	color:#fff;
+	color:#313131;
 }
 
 img{
@@ -95,16 +95,16 @@ header a.home,
 .main.registerin .check label,
 .select2-selection--single,
 .select2-selection__rendered{
-	-webkit-transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
 }
 
 h1,h2,h3,h4,input,select{
 	font-family: 'Oxygen', sans-serif;
-	color:#ffffff;
+	color:#313131;
 }
 
 h1{
@@ -126,22 +126,22 @@ h3{
 }
 
 ::-webkit-input-placeholder {
-   color:rgba(255,255,255,0.3)!important;
+   color:rgba(206,206,206,0.3)!important;
    opacity:1!important;
 }
 
 :-moz-placeholder {
-    color:rgba(255,255,255,0.3)!important;
+    color:rgba(206,206,206,0.3)!important;
     opacity:1!important;
 }
 
 ::-moz-placeholder {
-    color:rgba(255,255,255,0.3)!important;
+    color:rgba(206,206,206,0.3)!important;
     opacity:1!important;
 }
 
 :-ms-input-placeholder {
-	color:rgba(255,255,255,0.3)!important;  
+	color:rgba(206,206,206,0.3)!important;  
 	opacity:1!important;
 }
 
@@ -158,8 +158,8 @@ input[type="submit"]{
 /*  Header
 /*-----------------------------------------------------------------------------------*/
 header {
-    height:4.375rem;
-    line-height: 4.375rem;
+    height:2rem;
+    line-height: 2rem;
     z-index: 999;
 }
 
@@ -169,19 +169,19 @@ header .container{
 }
 
 header .nav-inner{
-	padding:0 2.5%;
+	padding: 2.5%;
 }
 
 header a.home{
 	width:1.375em;
 	font-size:1.3125em;
 	float:left;
-	color:#ffffff;
+	color:#313131;
 	text-align: center;
 }
 
 header a.home:hover{
-	color:rgba(255,255,255,0.7);
+	color:#A5A5A5;
 }
 
 header nav{
@@ -189,69 +189,50 @@ header nav{
 }
 
 header nav ul{
-	display: inline-block;
+	display: block;
 }
 
 header nav li{
-	display:inline-block;
+	display:block;
 }
 
 header nav li a{
-	color:#fff;
-	font-size: 0.9375rem;
-	padding:0 0.3125rem;
+	color:#313131;
+	font-size: 1rem;
+	padding: 0.2rem;
 	text-transform:uppercase;
 	cursor:pointer;
-	display:inline-block;
+	display:block;
     opacity: 0;
     visibility: hidden;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
     position:relative;
     top:-0.125rem;
+	text-align: right; /* Align text inside the link to the right */
+	letter-spacing: 0.2rem; /* Increase letter spacing */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Add underline only to the current page */
+header nav li a.current {
+    text-decoration: underline; /* Add underline for current page */
+    color: #a5a5a5; /* Optional: change the color for the current page */
 }
 
 header nav li a:hover,
 header nav li a.active{
-	color:rgba(255,255,255,0.7);
+	color:#a5a5a5;
 }
 
 header nav li a.separator{
 	width:2px;
 	height:1.5rem;
-	background:rgba(255,255,255,0.5);
+	background:#A5A5A5;
 	padding: 0;
 	position:relative;
 	top:1.3125rem;
 	margin:0 0.8125rem 0 0.4375rem;
 	text-indent: -9999px;
-}
-
-header nav ul li:nth-child(1n) a{
-	transition-delay: 350ms;
-}
-
-header nav ul li:nth-child(2n) a{
-	transition-delay: 300ms;
-}
-
-header nav ul li:nth-child(3n) a{
-	transition-delay: 250ms;
-}
-
-header nav ul li:nth-child(4n) a{
-	transition-delay: 200ms;
-}
-
-header nav ul li:nth-child(5n) a{
-	transition-delay: 150ms;
-}
-
-header nav ul li:nth-child(6n) a{
-	transition-delay: 100ms;
-}
-
-header nav ul li:nth-child(7n) a{
-	transition-delay: 50ms;
 }
 
 body.open header nav ul li:nth-child(1n) a:hover,
@@ -261,7 +242,7 @@ body.open header nav ul li:nth-child(4n) a:hover,
 body.open header nav ul li:nth-child(5n) a:hover,
 body.open header nav ul li:nth-child(6n) a:hover,
 body.open header nav ul li:nth-child(7n) a:hover{
-	transition: all .5s ease;
+	transition: all .2s ease;
 	transition-delay: 0s!important;
 }
 
@@ -275,7 +256,7 @@ header .open-menu{
   	height: 20px;
   	position: relative;
   	transform: rotate(0deg);
-  	transition: .5s ease-in-out;
+  	transition: .2s ease-in-out;
   	cursor: pointer;
   	float:right;
   	margin-top:1.5rem;
@@ -286,12 +267,12 @@ header .open-menu span{
   	position: absolute;
   	height: 4px;
   	width: 100%;
-  	background: #fff;
+  	background: #313131;
   	border-radius: 3px;
   	opacity: 1;
   	left: 0;
   	transform: rotate(0deg);
-  	transition: .25s ease-in-out;
+  	transition: .2s ease-in-out;
 }
 
 header .open-menu span:nth-child(1){
@@ -337,12 +318,12 @@ header nav.mobile ul li{
 header nav.mobile ul li a{
 	width: 100%;
     display: block;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(206,206,206,0.3);
     opacity: 1;
     visibility: visible;
     padding-left:0.52rem;
     transition-delay: 0ms;
-    transition: all .5s ease;
+    transition: all .2s ease;
 }
 
 header nav.mobile ul li a:hover{
@@ -430,7 +411,7 @@ header nav.mobile ul li a.separator{
 
 .main.carousel .column img{
 	transform:scale(0.85);
-	transition:transform 500ms ease;
+	transition:transform 200ms ease;
 }
 
 .main.carousel .slick-center img{
@@ -455,7 +436,7 @@ header nav.mobile ul li a.separator{
 	font-weight: 700;
 	text-transform:uppercase;
 	padding-top:2rem;
-	color: #ffffff;
+	color: #313131;
 }
 
 .main.carousel .description .block{
@@ -485,7 +466,7 @@ header nav.mobile ul li a.separator{
 
 .main.friends .column{
 	width:33.33333%;
-	border-right:2px solid rgba(255,255,255,0.5);
+	border-right:2px solid #313131;
 	padding:2.1875rem 0.625rem;
 	display:flex;
 	align-self:stretch;
@@ -513,7 +494,7 @@ header nav.mobile ul li a.separator{
 }
 
 .main.calendar .information h1{
-	color:#d5d5d5;
+	color:#313131;
 	text-align:left;
 	text-transform: lowercase;
 	padding-bottom:1.875rem;
@@ -521,7 +502,7 @@ header nav.mobile ul li a.separator{
 
 .main.calendar .information li{
 	font-size:0.875rem;
-	color:#d5d5d5;
+	color:#313131;
 }
 
 .main.calendar .information li span{
@@ -553,14 +534,14 @@ header nav.mobile ul li a.separator{
 	width:2.25rem;
 	height:2.25rem;
 	border-radius:50%;
-	background:#d5d5d5;
+	background:#313131;
 	display:flex;
 	align-items: center;
 	justify-content: center;
 }
 
 .main.calendar .information li.social ul li a:hover{
-	background:#fff;
+	background:#FFFFFF;
 }
 
 .main.calendar .information li.social ul li a span{
@@ -585,7 +566,7 @@ header nav.mobile ul li a.separator{
 }
 
 .main.donation .column h3{
-	color:#d5d5d5;
+	color:#313131;
 	padding-top:1.875rem;
 }
 
@@ -593,11 +574,16 @@ header nav.mobile ul li a.separator{
 	width:7.5625rem;
 	height:7.5625rem;
 	border-radius:50%;
-	background: #313131;
+	background: #FFFFFF;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-shrink: 0;
+	box-shadow: 0 0 0 4px #313131;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+	position:relative;
 }
 
 .main.donation .column .circle span{
@@ -606,25 +592,17 @@ header nav.mobile ul li a.separator{
 	z-index: 1;
 }
 
- .main.donation .column .circle {
-    box-shadow: 0 0 0 4px #d5d5d3;
-    -webkit-transition: color 0.3s;
-    -moz-transition: color 0.3s;
-    transition: color 0.3s;
-    position:relative;
-}
-
  .main.donation .column .circle:after {
- 	content: '';
- 	position: absolute;
- 	left: -1px;
+    content: '';
+    position: absolute;
+    left: -1px;
     right: -1px;
     top: -1px;
     bottom: -1px;
- 	margin:0 auto;
+    margin:0 auto;
     border-radius: 50%;
     padding: 1px;
-    background: #d5d5d3;
+    background: #313131;
     transition: transform 0.2s, opacity 0.3s;
     box-sizing: content-box;
 }
@@ -639,7 +617,7 @@ header nav.mobile ul li a.separator{
 
 .main.donation .column:hover .circle span,
 .main.donation .column:hover h3{
-	color:#fff;
+	color:#FFFFFF;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -647,7 +625,7 @@ header nav.mobile ul li a.separator{
 /*-----------------------------------------------------------------------------------*/
 .main.about h2{
 	font-size:3rem;
-	color:#d5d5d5;
+	color:#313131;
 }
 
 .main.about img{
@@ -668,16 +646,16 @@ header nav.mobile ul li a.separator{
 	text-align: center;
 	font-size: 1.875rem;
 	font-weight:700;
-	color:#d5d5d5;
+	color:#313131;
 	flex-shrink: 0;
 }
 
 .main.about ul.months li a{
-	color:rgba(255,255,255,0.7);
+	color:#CECECE;
 }
 
 .main.about ul.months li a:hover{
-	color:rgba(255,255,255,1);
+	color:#CECECE;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -700,7 +678,7 @@ header nav.mobile ul li a.separator{
 
 .main.register h2{
 	font-size:1.5rem;
-	color:#ffffff;
+	color:#313131;
 	font-weight: 300;
 	text-align: center;
 	text-transform: uppercase;
@@ -709,7 +687,7 @@ header nav.mobile ul li a.separator{
 
 .main.register span{
 	font-size:15rem;
-	color:#ffffff;
+	color:#313131;
 }
 
 .main.register span.icon-code{
@@ -719,7 +697,7 @@ header nav.mobile ul li a.separator{
 
 .main.register p{
 	font-size:1.125rem;
-	color:#ffffff;
+	color:#313131;
 	font-weight: 300;
 	text-align: center;
 	padding:2.5rem 1.5rem;
@@ -728,7 +706,7 @@ header nav.mobile ul li a.separator{
 .main.register .seperator{
 	width:2px;
 	height:20vh;
-	background:#7f7f7f;
+	background:#313131;
 	align-self: center;
 }
 
@@ -790,10 +768,10 @@ header nav.mobile ul li a.separator{
 	width:100%;
 	height:3.125rem;
 	font-size:1.125rem;
-	color:rgba(255,255,255,1);
-	background:#313131;
+	color:#313131;
+	background:#FFFFFF;
 	padding:0 1rem;
-	border:0.0625rem solid rgba(255,255,255,0.5);
+	border:0.0625rem solid rgba(206,206,206,0.5);
 	margin-bottom:1.5rem;
 	align-self:center;
 }
@@ -804,7 +782,7 @@ header nav.mobile ul li a.separator{
 
 .main.registerin input:focus,
 .main.survey input:focus{
-	border:0.0625rem solid rgba(255,255,255,1);
+	border:0.0625rem solid rgba(206,206,206,1);
 }
 
 .main.registerin input.error,
@@ -826,13 +804,13 @@ header nav.mobile ul li a.separator{
 
 .main.registerin input[type="submit"]:hover,
 .main.survey input[type="submit"]:hover{
-	color:rgba(255,255,255,1);
-	background:rgba(255,255,255,0.3);
+	color:#313131;
+	background:rgba(206,206,206,0.3);
 }
 
 .main.registerin input[type="submit"]:focus,
 .main.survey input[type="submit"]:focus{
-	border:0.0625rem solid rgba(255,255,255,0.5);
+	border:0.0625rem solid rgba(206,206,206,0.5);
 }
 
 .main.registerin .hidden{
@@ -863,7 +841,7 @@ header nav.mobile ul li a.separator{
 
 .main.registerin .check label{
 	font-size: 1.125rem;
-	color: rgba(255,255,255,0.5);
+	color: rgba(206,206,206,0.5);
 }
 
 .main.registerin .check label:before {
@@ -873,69 +851,24 @@ header nav.mobile ul li a.separator{
 	height: 30px;
 	vertical-align:middle;
 	margin-right:1.25rem;
-	border: 0.0625rem solid rgba(255,255,255,0.5);
+	border: 0.0625rem solid rgba(206,206,206,0.5);
 }
 
 .main.registerin .check input[type=checkbox]:checked + label:before {
 	content: "\2714";
 	font-size: 25px;
-	color: #ffffff;
+	color: #313131;
 	text-align: center;
     line-height: 28px;
 }
 
 .main.registerin .check input[type="checkbox"]:checked + label{
-	color: #fff;
+	color: #313131;
 } 
 
 .main.registerin .check input[type="checkbox"]:checked + label::before{
-	border: 0.0625rem solid rgba(255,255,255,1);	
+	border: 0.0625rem solid rgba(206,206,206,1);	
 }
-
-
-/*.main.registerin .check label {
-	display:flex;
-	position: relative;
-	font-size: 1.125rem;
-	padding: 0 0 0 50px;
-	vertical-align: top;
-	color: rgba(255,255,255,0.5);
-	cursor: pointer;
-	transition: color 0.3s;
-}
-
-.main.registerin .check input[type="checkbox"],
-.main.registerin .check label::before {
-	content:"\2714";
-	width: 30px;
-	height: 30px;
-	top: 50%;
-	left: 0;
-	margin-top:-15px;
-	position: absolute;
-	cursor: pointer;
-}
-
-.main.registerin .check input[type="checkbox"]{	
-	opacity: 0;
-	display: inline-block;
-	vertical-align: middle;
-	z-index: 100;
-}
-
-.main.registerin .check label::before {
-	content: '';
-	border: 0.0625rem solid rgba(255,255,255,0.5);
-	transition: border 0.5s;
-}
-
-.main.registerin .check input[type="checkbox"]:checked + label{
-	color: #fff;
-} 
-
-.main.registerin .check input[type="checkbox"]:checked + label::before{
-	border: 0.0625rem solid rgba(255,255,255,1);	
-}*/
 
 /*-----------------------------------------------------------------------------------*/
 /*  Activity section
@@ -980,14 +913,14 @@ header nav.mobile ul li a.separator{
 .main.activity ul li{
 	width:25%;
 	font-size:0.875rem;
-	color:#898989;
+	color:#313131;
 	font-weight:300;
 	display:flex;
 	flex-direction: column;
 }
 
 .main.activity ul li span{
-	color:#ffffff;
+	color:#313131;
 	font-weight:700;
 }
 
@@ -996,22 +929,22 @@ header nav.mobile ul li a.separator{
 	max-width:200px;
 	height:3rem;
 	line-height:3rem;
-	color:#fff;
+	color:#313131;
 	font-size: 0.875rem;
 	font-weight:700;
 	text-transform: uppercase;
-	border:0.0625rem solid rgba(255,255,255,0.5);
+	border:0.0625rem solid rgba(206,206,206,0.5);
 	padding:0 0.875rem;
 }
 
 .main.activity ul li a:hover{
-	background:rgba(255,255,255,0.3);
-	border: 0.0625rem solid rgba(255,255,255,1); 
+	background:rgba(206,206,206,0.3);
+	border: 0.0625rem solid rgba(206,206,206,1); 
 }
 
 .main.activity p{
 	width:60%;
-	color:#fff;
+	color:#313131;
 	font-size:1.5rem;
 	font-weight:300;
 	margin:0 auto;
@@ -1033,7 +966,7 @@ header nav.mobile ul li a.separator{
     align-self: stretch;
     align-items: center;
     justify-content: center;
-    border-right:1.1px solid rgba(255,255,255,0.6);
+    border-right:1px solid #313131;
     padding:1rem;
 }
 
@@ -1047,7 +980,7 @@ header nav.mobile ul li a.separator{
 
 .main.contacts .column li{
 	font-size:1.125rem;
-	color:#d5d5d5;
+	color:#313131;
 	text-align:left;
 }
 
@@ -1103,14 +1036,14 @@ input[type="radio"]:not(:checked) + label:before {
     height: 18px;
     border: 1px solid #ddd;
     border-radius: 100%;
-    background: #313131;
+    background: #FFFFFF;
 }
 input[type="radio"]:checked + label:after,
 input[type="radio"]:not(:checked) + label:after {
     content: '';
     width: 12px;
     height: 12px;
-    background: #fff;
+    background: #313131;
     position: absolute;
     top: 3px;
     left: 3px;
@@ -1183,10 +1116,10 @@ input[type="radio"]:checked + label:after {
 	width: 100%;
     height: 3.75rem;
     font-size: 1.375rem;
-    color: rgba(255,255,255,1);
+    color: #313131;
     background: transparent;
     padding: 0 1rem;
-    border-bottom: 0.0625rem solid rgba(255,255,255,0.5); 
+    border-bottom: 0.0625rem solid rgba(206,206,206,0.5); 
 }
 
 .opinion input.error{
@@ -1194,7 +1127,7 @@ input[type="radio"]:checked + label:after {
 }
 
 .opinion input:focus{
-	border-bottom: 0.0625rem solid rgba(255,255,255,1); 	
+	border-bottom: 0.0625rem solid rgba(206,206,206,1); 	
 }
 
 .opinion input[type="submit"]{
@@ -1203,16 +1136,16 @@ input[type="radio"]:checked + label:after {
     font-size: 1.2rem;
     font-weight:700;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.5);
-    border: 0.0625rem solid rgba(255,255,255,0.5); 
+    color: rgba(206,206,206,0.5);
+    border: 0.0625rem solid rgba(206,206,206,0.5); 
     margin-top:3.75rem;
     align-self: center;
 }
 
 .opinion input[type="submit"]:hover{
-	color: rgba(255,255,255,1);
-	background:rgba(255,255,255,0.3);
-	border: 0.0625rem solid rgba(255,255,255,1); 
+	color: rgba(206,206,206,1);
+	background:rgba(206,206,206,0.3);
+	border: 0.0625rem solid rgba(206,206,206,1); 
 }
 
 .survey iframe{
@@ -1297,7 +1230,7 @@ input[type="radio"]:checked + label:after {
 	}
 
 	.main.index{
-		background:#313131;
+		background:#FFFFFF;
 		flex:1;
 		display:flex;
 		position:relative;
@@ -1416,12 +1349,9 @@ input[type="radio"]:checked + label:after {
 }
 
 
-hr { 
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 0.5px;
+hr {
+	border: none; /* Remove default border */
+	height: 1px; /* Set line height */
+	background-color: #313131; /* Set line color */
+	margin: 0.5em auto; /* Adjust margins as needed */
 }
