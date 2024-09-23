@@ -1330,8 +1330,3 @@ hr {
 	background-color: #313131; /* Set line color */
 	margin: 0.5em auto; /* Adjust margins as needed */
 }
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-	display: none;
-}
