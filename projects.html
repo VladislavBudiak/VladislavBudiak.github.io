@@ -18,6 +18,46 @@
         <link rel="stylesheet" href="./VladislavBudiakPage/slick.css">
         <link rel="stylesheet" href="./VladislavBudiakPage/select2.css">
         <link rel="stylesheet" href="./VladislavBudiakPage/style.css">
+        <style>
+            .project-container {
+                width: 80%;
+                max-width: 1200px;
+                margin: auto;
+                overflow: hidden;
+                padding: 20px;
+            }
+            .project {
+                margin-bottom: 30px;
+            }
+            .project-title {
+                font-size: 24px;
+                color: #313131;
+                margin-top: 50px;
+            }
+            .project-content {
+                display: flex;
+                align-items: column;
+            }
+            .project-images {
+                flex: 3;
+                margin-right: 20px;
+            }
+            .project-images img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 5px;
+            }
+            .annotation {
+                position: relative;
+                background-color: #FFFFFF;
+                padding: 5px;
+                font-size: 14px;
+                border-radius: 4px;
+            }
+            .project-text {
+                flex: 2;
+            }
+        </style>
     </head>
     <body class="open">
         <!--[if lt IE 8]>
@@ -40,9 +80,77 @@
         
 
         <section class="main contacts sceneElement clearfix">
-            <div class="container">
-                
-            </div>
+            <div class="wrapper">
+                <div class="project-container">
+                    <div class="project">
+                        <h2 class="project-title">Intelligent driving system for vehicles</h2>
+                        <hr>
+                        <div class="project-content">
+                            <div class="project-images">
+                                <div class="image-container">
+                                    <img src="./VladislavBudiakPage/Tractor1.jpg" alt="Fragment of the software in action.">
+                                    <p class="annotation">Fragment of the software in action</p>
+                                </div>
+                                <div class="image-container">
+                                    <img src="./VladislavBudiakPage/Tractor2.png" alt="View of the installation inside the tractor cab.">
+                                    <p class="annotation">View of the installation inside the tractor cab</p>
+                                </div>
+                            </div>
+                            <div class="project-text">
+                                <p>Product: The software and hardware for autonomous self-plowing tractor.(2021)</p>
+                                <p>The software can distinguish patterns and objects for
+                                    navigation on the farm field. Recognition is carried out by video
+                                    cameras and laser sensors. The data is processed by the
+                                    program and the signal is transmitted to the control levers for
+                                    the control of the tractor. The product was tested on real
+                                    tractor.</p>
+                                <p><a href="https://photos.app.goo.gl/me9T7cuUuStLoy2A6" target="_blank" id="dynamicLink">More media</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="project">
+                        <h2 class="project-title">Lane detection system (predecessor of previous project)</h2>
+                        <hr>
+                        <div class="project-content">
+                            <div class="project-images">
+                                <div class="image-container">
+                                    <img src="./VladislavBudiakPage/LaneDetection1.png" alt="Fragment of the software in action.">
+                                </div>
+                                <div class="image-container">
+                                    <img src="./VladislavBudiakPage/LaneDetection2.png" alt="Fragment of the software in action.">
+                                    <p class="annotation">Fragments of the software in action</p>
+                                </div>
+                            </div>
+                            <div class="project-text">
+                                <p>Product: The software for lane recognition on the road. (2020)</p>
+                                <p>Autonomous driving and innovative solutions always fascinated me, that is why I was curious to try to implement some kind of driver assistant. The software is able to distinguish patterns on the road. Recognition is carried out by video cameras and algorithms.</p>
+                                <p><a href="https://photos.app.goo.gl/ba2qfvhMKvFoNDvK7" target="_blank" id="dynamicLink">More media</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="project"></div>
+                        <h2 class="project-title">Quadcopter from basic electronics</h2>
+                        <hr>
+                        <div class="project-content">
+                            <div class="project-images">
+                                <div class="image-container">
+                                    <img src="./VladislavBudiakPage/Drone1.jpg" alt="Picture of hardware.">
+                                    <p class="annotation">Picture of hardware</p>
+                                </div>
+                            </div>
+                            <div class="project-text">
+                                <p>Product: The software and hardware for a quadcopter. Programmed on Arduino Mega microcontroller. (2019)</p>
+                                <p>At that time I was fascinated with robotics and algorithms. And quadcopter seemed like a perfect project to improve my skills in engineering and programming. Building the electronics part of the drone as well as writing algorithm for control and stabilization, development of viereless protocol between the remote and copter gave me a unforgettable, fun experience that made me to love engineering.</p>
+                                <p><a href="https://photos.app.goo.gl/XvqwHs7xxZh96N1dA" target="_blank" id="dynamicLink">More media</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
         </section></div>                 
         <script src="./VladislavBudiakPage/main.js"></script>
 
