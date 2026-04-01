@@ -47,6 +47,29 @@
                 height: auto;
                 margin-bottom: 5px;
             }
+            .noruz-gallery {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .noruz-gallery .top-image img {
+                width: 100%;
+            }
+            .noruz-gallery .bottom-images {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+            }
+            .noruz-gallery .bottom-images img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            @media (max-width: 768px) {
+                .noruz-gallery .bottom-images {
+                    grid-template-columns: 1fr;
+                }
+            }
             .annotation {
                 position: relative;
                 background-color: #FFFFFF;
@@ -115,6 +138,29 @@
                                     <li>Data-driven recommendations & actionable insights</li>
                                 </ul>
                                 <p><a href="https://twarus.com/" target="_blank">Visit Twarus.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <h2 class="project-title"><a href="https://noruz.lt" target="_blank">NoRuz.lt</a> - Visual Odometry UAV project</h2>
+                        <hr>
+                        <div class="project-content">
+                            <div class="project-images">
+                                <div class="noruz-gallery">
+                                    <div class="top-image">
+                                        <img src="./VladislavBudiakPage/VisualOdometry.png" alt="Visual odometry processing output">
+                                    </div>
+                                    <div class="bottom-images">
+                                        <img src="./VladislavBudiakPage/Plane.png" alt="Plane build image PNG format">
+                                        <img src="./VladislavBudiakPage/Plane.jpg" alt="Plane build image JPG format">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-text">
+                                <p>Product: Visual Geolocation and Odometry Navigation System for UAVs</p>
+                                <p>This project focuses on developing robust autonomous navigation for drones without relying on GPS. By combining inertial sensors and visual odometry from a known starting point, the system continuously calculates the drone's approximate distance traveled and trajectory.</p>
+                                <p>To eliminate drift and ensure precise positioning, the software periodically matches real-time aerial camera feeds against pre-loaded satellite maps. Because the inertial data provides an approximate location, the image-matching algorithm only needs to search a small, bounded area.</p>
                             </div>
                         </div>
                     </div>
